@@ -14,7 +14,7 @@ module.exports = defineConfig({
 
   reporter: [
   ["html"],
-  ["allure-report"]
+  ["allure-results"]
 ]
 
 });
