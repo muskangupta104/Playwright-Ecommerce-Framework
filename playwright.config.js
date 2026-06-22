@@ -13,8 +13,8 @@ module.exports = defineConfig({
   },
 
   reporter: [
-    ["list"],
-    ["allure-playwright"]
-  ]
+  ["html"],
+  ["allure-report"]
+]
 
 });
