@@ -8,7 +8,7 @@ test.beforeEach(async ({ page }) => {
   const login = new LoginPage(page);
 
   await login.navigate();
-  await login.login(data.username, data.password);
+  await login.login(data.username,data.password);
 });
 
 
