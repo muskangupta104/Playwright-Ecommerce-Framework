@@ -1,13 +1,18 @@
 class AddToCart {
+  constructor(page) {
+    this.page = page;
+    this.product = page.locator('//*[@id="add-to-cart-sauce-labs-backpack"]');
+    this.removeBtn = page.locator("#remove-sauce-labs-backpack");
+  }
 
- constructor(page) {
-   this.page = page;
+  async addtocart() {
+    await this.product.click();
+  }
 
-   this.product = page.locator("#add-to-cart-sauce-labs-backpack");
-   
- }
-
-
+  async cartremove() {
+    await this.removeBtn.click();
+  }
 }
+
 
 module.exports = AddToCart;
