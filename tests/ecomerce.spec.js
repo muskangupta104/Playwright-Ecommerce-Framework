@@ -26,7 +26,8 @@ test("Verify user can add and remove product from cart", async ({ page }) => {
 
 test("Verify user can filter product successfully", async ({ page }) => {
   const sortDropdown = new FilterForProducts(page);
-
+await expect(sortDropdown.sortDropdown).toBeEnabled();
+await expect(sortDropdown.sortDropdown).toBeVisible();
   await sortDropdown.selectName();
 
 
